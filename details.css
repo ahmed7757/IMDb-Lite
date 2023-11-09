@@ -1,0 +1,166 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px auto;
+    border-bottom:1px solid #f5c518 ;
+}
+
+.logo {
+    width: 85px;
+    height: auto;
+    margin-left: 37px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li a {
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    margin: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+nav ul li a:hover {
+    color: #f5c518;
+}
+
+nav ul li:nth-child(3) a svg{
+    margin-right: 5px;
+}
+
+nav ul li:nth-child(4) a span {
+    color: #33c5f3;
+}
+
+h1 {
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 10px;
+}
+
+img {
+    height: 100%;
+    width: 350px;
+}
+
+.discription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.discription h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.discription p {
+    text-align: left;
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.discription h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.discription .btn {
+    display: inline-block;
+    padding: 13px 40px;
+    background-color: #f5c518;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: all .50s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.discription .btn:hover {
+    transform: translateX(10px);
+    border: 2px solid white;
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trailer h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.trailer video {
+    width: 50%;
+    height: auto;
+    filter: brightness(60%);
+    transition: all .50s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.trailer video:hover {
+    filter: brightness(100%);
+}
+
+.gallary-text {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
